@@ -16,7 +16,7 @@ typedef struct aux delivery;
 //binary search
 /**
  * @brief Function busca
- * @param vetor - vetor contendo os indices e o valor da casa N
+ * @param vetor - vetor contendo os indices e o valores das casas
  * @param number - encomenda a ser buscada 
  * @param size - tamanho do vetor 
  * @return - index do vetor que contém a encomenda encontrada.
@@ -39,7 +39,7 @@ int busca(delivery *vetor, int number, int size)
 //binary search
 /**
  * @brief Function merge
- * @param vetor - vetor contendo os indices e o valor da casa N
+ * @param vetor - vetor contendo os indices e o valores das casas
  * @param start - inicio 
  * @param half - meio
  * @param end - fim  
@@ -71,7 +71,7 @@ void merge(delivery *vetor, int start, int half, int end) {
 }
 /**
  * @brief Function mergeSort
- * @param vetor - vetor contendo os indices e o valor da casa N
+ * @param vetor - vetor contendo os indices e o valores das casas
  * @param start - inicio 
  * @param end - tamanho vetor (a principio).
  * 
@@ -79,9 +79,9 @@ void merge(delivery *vetor, int start, int half, int end) {
 void mergeSort(delivery *vetor, int start, int end){
     if (start < end) {
         int half = (end+start)/2;
-        mergeSort(vetor, start, half);
-        mergeSort(vetor, half+1, end);
-        merge(vetor, start, half, end);
+        mergeSort(vetor, start, half);//sub-Vetor Esq
+        mergeSort(vetor, half+1, end);//sub-Vetor Dir
+        merge(vetor, start, half, end);//Merge
     }
 }
 
