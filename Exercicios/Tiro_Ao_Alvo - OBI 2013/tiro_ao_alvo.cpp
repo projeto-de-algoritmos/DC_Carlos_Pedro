@@ -3,6 +3,14 @@
 
 using namespace std;
 
+/**
+ * @brief Function search.
+ * @param vetor - vetor contendo os raios.
+ * @param size - tamanho do vetor.
+ * @param number - pontuação a ser encontrada.
+ * @return - se o numero não estiver no vetor, retorna tamanho + 1
+ * caso contrário retorne index da pontuação respectiva.
+ */
 int search(int *vetor, long long int size, double number) {
     if (number > vetor[size - 1])
         return size + 1;
