@@ -10,7 +10,7 @@
 
 ## Sobre
 
-Resolução de duas questões da olimpíada brasileira de informática, 
+Resolução de duas questões da olimpíada brasileira de informática :
 - Carteiro - fase 1 - 2014 - Mojificado(Modificado) [Solução](Exercicios/Carteiro-OBI-MOJ/solucao.MD)
 - Tiro ao Alvo - fase 1 - 2013 [Solução](Exercicios/Tiro_Ao_Alvo-OBI-2013/solucaoAlvo.MD)
 
