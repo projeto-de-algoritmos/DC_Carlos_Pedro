@@ -89,7 +89,7 @@ int main (void) {
         time+=previous-current;    
     }
 
-     printf("%d\n", time); 
+     cout << time << "/n";
     
     return 0;
 }
